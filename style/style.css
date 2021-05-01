@@ -1,0 +1,159 @@
+@import "https://fonts.googleapis.com/css?family=Lato:400,700";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #eee;
+  font-family: "Lato", sans-serif;
+}
+#page-wrapper {
+  position: relative;
+}
+.logo > img {
+  width: 100%;
+  height: 100%;
+  max-width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-left: 20px;
+}
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  min-height: 75px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #fff;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #000;
+  padding: 10px;
+}
+.nav-link:hover {
+  background-color: #008fb3;
+}
+.title {
+  margin-top: 150px;
+  text-align: center;
+  color: #005fb3;
+}
+#email {
+  display: flex;
+  margin: auto;
+  width: 180px;
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+  background-color: #00bf13;
+  font-size: 15px;
+  transition: width 0.5s ease, background 0.5s ease;
+}
+
+#email::placeholder {
+  color: white;
+  opacity: 80%;
+}
+.email:hover {
+  background-color: #008fb3;
+  width: 300px;
+}
+#submit {
+  display: block;
+  margin: auto;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  width: 80px;
+  margin-top: 20px;
+  background-color: #00bf13;
+  color: white;
+  font-size: 15px;
+  transition: background 0.3s ease;
+}
+#submit:hover {
+  background-color: #008fb3;
+}
+.text {
+  width: 700px;
+  margin: auto;
+  color: #008fb3;
+  margin-top: 100px;
+}
+.text:hover {
+  text-shadow: 0px 0px 5px;
+}
+#video {
+  margin: auto;
+  display: block;
+  margin-top: 100px;
+  background-color: teal;
+  padding: 5px;
+}
+.flex-container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 100px;
+}
+div.products {
+  background-color: white;
+  margin: 20px;
+  transition: box-shadow 0.5 ease;
+}
+.products:hover {
+  box-shadow: 0px 0px 5px #008fb3;
+}
+div.product-title {
+  padding: 10px;
+  background-color: #008fb3;
+  color: white;
+  text-align: center;
+}
+div.product-description {
+  color: #005fb3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+#product-submit {
+  background-color: #00bf13;
+  border: none;
+  width: 100%;
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  transition: background 0.5 ease;
+}
+#product-submit:hover {
+  background-color: #005fb3;
+}
+
+@media screen and (max-width: 600px) {
+  .flex-container {
+    flex-direction: column;
+  }
+  .nav-link {
+    width: 100%;
+    margin: auto;
+  }
+  .text {
+    width: 400px;
+  }
+  header {
+    flex-wrap: wrap;
+  }
+}
